@@ -1,8 +1,62 @@
-📊 Employee Management System (EMS)A lightweight, web-based solution for managing organizational hierarchies and personnel records, built with PHP and MySQL.🚀 FeaturesSecure Authentication: Administrator login and session management.Department Management: Create and organize company departments.Designation Tracking: Manage job titles linked to specific departments.Full CRUD: Create, Read, Update, and Delete capabilities for employee records.Relational Integrity: Database design ensuring consistency across tables.🛠️ Technologies UsedBackend: PHP (Procedural)Database: MySQLFrontend: HTML5, CSS3Server: Apache (XAMPP / WAMP)📊 Database StructureTableDescriptionUsersAdministrator credentials and authentication dataDepartmentsOrganizational units (e.g., IT, HR, Sales)DesignationsJob titles mapped to specific departmentsEmployeesCore employee data and profile records📁 Project StructurePlaintextemployee-management-system/
-├── project.php      # Unified application logic and UI
-├── database.sql     # Database schema and initial seed data
-└── README.md        # Project documentation
-⚙️ Installation & Setup1. Environment SetupClone the repository to your local server root (e.g., htdocs or www):Bashgit clone https://github.com/yourusername/employee-management-system.git
-2. Database ConfigurationOpen phpMyAdmin or your MySQL CLI.Create a new database:SQLCREATE DATABASE ems_database;
-Import the database.sql file provided in this repository.3. Connection SettingsOpen project.php and verify the connection string matches your local setup:PHP$conn = mysqli_connect("localhost", "root", "", "ems_database");
-4. Access the ApplicationEnsure Apache and MySQL are running in your XAMPP/WAMP control panel, then navigate to:http://localhost/employee-management-system/project.php🛡️ Future Enhancements (Cybersecurity Focus)[ ] Data Security: Implement password_hash() for user credentials.[ ] SQL Injection: Transition from mysqli_query to Prepared Statements.[ ] RBAC: Add Role-Based Access Control for HR and standard employees.[ ] Reporting: Export employee lists to PDF or Excel.👤 AuthorHassan Ali Cybersecurity Student HITEC University Taxila
+
+# 📊 Employee Management System (EMS)
+
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+
+A lightweight, web-based solution for managing organizational hierarchies and personnel records, built with **PHP** and **MySQL**.
+
+---
+
+## 🚀 Features
+
+* **Secure Authentication:** Administrator login and session management.
+* **Department Management:** Create and organize company departments.
+* **Designation Tracking:** Manage job titles linked to specific departments.
+* **Full CRUD:** Create, Read, Update, and Delete capabilities for employee records.
+
+---
+
+## 🛠️ Technologies Used
+
+* **Backend:** PHP (Procedural)
+* **Database:** MySQL
+* **Frontend:** HTML5, CSS3
+* **Server:** Apache (XAMPP / WAMP)
+
+---
+
+## 📊 Database Structure
+
+| Table | Description |
+| :--- | :--- |
+| `Users` | Administrator credentials and authentication data |
+| `Departments` | Organizational units (e.g., IT, HR, Sales) |
+| `Designations` | Job titles mapped to specific departments |
+| `Employees` | Core employee data and profile records |
+---
+## ⚙️ Installation & Setup
+1. Environment Setup
+Clone the repository to your local server root (e.g., htdocs or www):
+
+2. Database Configuration
+Create a new database named ems_database.
+
+Import the database.sql file provided in this repository.
+
+3. Connection Settings
+Open project.php and verify the connection string:
+
+## 🛡️ Future Enhancements
+Security: Implement password_hash() for user credentials.
+
+SQL Injection: Transition to Prepared Statements.
+
+UI/UX: Integration of Bootstrap 5 for a responsive dashboard.
+
+## 👤 Author
+Hassan Ali (23-cys-035)
+
+Cybersecurity Student
+
+HITEC University Taxila
