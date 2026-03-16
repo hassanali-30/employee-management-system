@@ -1,99 +1,99 @@
-# Employee Management System
+Employee Management System (EMS)
 
-The Employee Management System (EMS) is a web-based application developed using PHP and MySQL to manage employee information in an organization.
+The Employee Management System (EMS) is a web-based application developed using PHP and MySQL to efficiently manage employee information within an organization.
+It provides administrators with an intuitive interface to manage departments, designations, employees, and view/delete employee records.
 
-The system allows administrators to manage departments, employees, salaries, attendance, and leave requests through a simple and user-friendly interface.
+Features
 
-## Features
+Secure administrator login/logout
 
-- Secure administrator login
-- Department management
-- Designation management
-- Employee management
-- Salary management
-- Attendance tracking
-- Leave request management
-- Full CRUD operations
-- Relational database design
+Department management (add/view)
 
-## Technologies Used
+Designation management (add/view)
 
-- PHP
-- MySQL
-- Bootstrap 5
-- HTML / CSS
-- SQL
+Employee management (add/view/delete)
 
-## Database Tables
+Full CRUD operations for main entities
 
-The system contains the following tables:
+Relational database design using MySQL
 
-- Departments
-- Designations
-- Employees
-- Salaries
-- Attendance
-- Leaves
-- Users
+Technologies Used
 
-## Project Structure
+Backend: PHP
 
-employee-management-system
+Database: MySQL
 
-index.php  
-database.sql  
-README.md  
+Frontend: HTML, CSS (basic styling)
 
-report/  
-project_report.pdf  
+SQL: Structured queries for CRUD operations
 
-screenshots/
+Database Tables
 
-## Installation
+The system uses the following tables:
+
+Users – administrator login credentials
+
+Departments – department information
+
+Designations – job titles linked to departments
+
+Employees – employee records
+
+Optional tables like Salaries, Attendance, and Leaves can be added in future versions.
+
+Project Structure
+employee-management-system/
+│
+├── project.php           # Main PHP file containing all functionality
+├── database.sql          # SQL file to create tables and seed data
+├── README.md             # Project documentation
+└── screenshots/          # Optional: screenshots of the application
+Installation
 
 Clone the repository
 
 git clone https://github.com/yourusername/employee-management-system.git
-
-Move into the project directory
-
 cd employee-management-system
 
-## Setup Database
+Setup Database
 
-1. Open phpMyAdmin
-2. Create a new database
+Open phpMyAdmin or MySQL CLI
 
-ems_database
+Create a new database:
 
-3. Import the SQL file
+CREATE DATABASE ems_database;
 
-database.sql
+Import database.sql into your new database
 
-## Running the Project
+Configure Project
 
-Place the project folder inside
+Open project.php and update the database connection if needed:
 
-xampp/htdocs
+$conn = mysqli_connect("localhost", "root", "", "ems_database");
 
-Start:
+Run the Project
 
-- Apache
-- MySQL
+Place the project folder inside your server root (xampp/htdocs or equivalent)
 
-Open browser:
+Start Apache and MySQL
 
-http://localhost/employee-management-system
+Open in browser:
 
-## Future Improvements
+http://localhost/employee-management-system/project.php
+Future Improvements
 
-- Role-based access control
-- Payslip generation
-- HR analytics dashboard
-- Reporting and charts
+Role-based access control (Admin, HR, Employee)
 
-## Author
+Password hashing for secure login
+
+Payslip generation and salary management
+
+Attendance tracking and leave management
+
+Advanced reporting and charts
+
+Author
 
 Hassan Ali (23-cys-035)
-Cybersecurity Student 
+Cybersecurity Student
 HITEC University Taxila
