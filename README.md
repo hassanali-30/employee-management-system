@@ -94,6 +94,6 @@ http://localhost/employee-management-system
 
 ## Author
 
-Hassan Ali  
-Cybersecurity Student – HITEC University Taxila# employee-management-system
-A web-based Employee Management System using PHP, MySQL, and Bootstrap with full CRUD operations.
+Hassan Ali (23-cys-035)
+Cybersecurity Student 
+HITEC University Taxila
