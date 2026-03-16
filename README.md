@@ -175,6 +175,8 @@ employee-management-system/
 ```bash
 git clone https://github.com/yourusername/employee-management-system.git
 cd employee-management-system
+
+
 ---
 ## Set up the database
 
@@ -192,7 +194,9 @@ Open project.php and update the database connection if needed:
 
 $conn = mysqli_connect("localhost", "root", "", "ems_database");
 
-Run the project
+
+---
+## Run the project
 
 Place the project folder in your server root (xampp/htdocs or equivalent)
 
@@ -212,6 +216,8 @@ Employee attendance and leave management
 Salary management and payslip generation
 
 Analytics dashboard and reporting
+
+
 ---
 ## Author
 
