@@ -175,7 +175,7 @@ employee-management-system/
 ```bash
 git clone https://github.com/yourusername/employee-management-system.git
 cd employee-management-system
-
+---
 ## Set up the database
 
 Open phpMyAdmin or MySQL CLI
@@ -212,7 +212,7 @@ Employee attendance and leave management
 Salary management and payslip generation
 
 Analytics dashboard and reporting
-
+---
 ## Author
 
 Hassan Ali
