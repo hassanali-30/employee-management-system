@@ -1,5 +1,4 @@
-Employee Management System (EMS)
-
+##Employee Management System (EMS)
 Employee Management System (EMS) is a lightweight web-based application built with PHP and MySQL to manage employee information in an organization.
 It allows administrators to efficiently handle departments, designations, and employee records through a clean and user-friendly interface.
 
