@@ -37,3 +37,62 @@ It allows administrators to efficiently manage departments, designations, and em
 ---
 
 ## Project Structure
+employee-management-system/
+│
+├── project.php # Main PHP file containing all functionality
+├── database.sql # SQL file to create tables and initial data
+└── README.md # Project documentation
+
+
+---
+
+## Installation
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/yourusername/employee-management-system.git
+cd employee-management-system
+
+Set up the database
+
+Open phpMyAdmin or MySQL CLI
+
+Create a new database:
+
+CREATE DATABASE ems_database;
+
+Import the database.sql file into your database
+
+Configure the project
+
+Open project.php and update the database connection if needed:
+
+$conn = mysqli_connect("localhost", "root", "", "ems_database");
+
+Run the project
+
+Place the project folder in your server root (xampp/htdocs or equivalent)
+
+Start Apache and MySQL
+
+Open your browser and navigate to:
+
+http://localhost/employee-management-system/project.php
+Future Enhancements
+
+Role-based access control (Admin, HR, Employee)
+
+Password hashing for secure login
+
+Employee attendance and leave management
+
+Salary management and payslip generation
+
+Analytics dashboard and reporting
+
+Author
+
+Hassan Ali
+Cybersecurity Student 
+HITEC University Taxila
