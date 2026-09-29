@@ -1,62 +1,56 @@
+# Employee Management System
 
-# 📊 Employee Management System (EMS)
+A PHP and MySQL web application for managing organizational departments, designations, employees, and administrator access.
 
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+## Features
 
-A lightweight, web-based solution for managing organizational hierarchies and personnel records, built with **PHP** and **MySQL**.
+- Administrator login and session flow
+- Department management
+- Designation management linked to departments
+- Employee record creation, viewing, updating, and deletion
+- HTML and CSS interface
 
----
+## Technology Stack
 
-## 🚀 Features
+- PHP
+- MySQL
+- HTML5 and CSS3
+- Apache through XAMPP or WAMP
 
-* **Secure Authentication:** Administrator login and session management.
-* **Department Management:** Create and organize company departments.
-* **Designation Tracking:** Manage job titles linked to specific departments.
-* **Full CRUD:** Create, Read, Update, and Delete capabilities for employee records.
+## Database Areas
 
----
+| Table | Purpose |
+| --- | --- |
+| `Users` | Administrator accounts and authentication data |
+| `Departments` | Organizational departments |
+| `Designations` | Job titles associated with departments |
+| `Employees` | Employee records |
 
-## 🛠️ Technologies Used
+## Installation
 
-* **Backend:** PHP (Procedural)
-* **Database:** MySQL
-* **Frontend:** HTML5, CSS3
-* **Server:** Apache (XAMPP / WAMP)
+1. Install PHP, MySQL, and Apache through XAMPP, WAMP, or an equivalent local stack.
+2. Clone or copy the repository into the server document root, such as `htdocs`.
+3. Create a database named `ems_database`.
+4. Import the repository's `database.sql` file.
+5. Review the connection settings in `project.php`.
+6. Start Apache and MySQL, then open the project through the local server.
 
----
+## Security Considerations
 
-## 📊 Database Structure
+Before production use, review and strengthen:
 
-| Table | Description |
-| :--- | :--- |
-| `Users` | Administrator credentials and authentication data |
-| `Departments` | Organizational units (e.g., IT, HR, Sales) |
-| `Designations` | Job titles mapped to specific departments |
-| `Employees` | Core employee data and profile records |
----
-## ⚙️ Installation & Setup
-1. Environment Setup
-Clone the repository to your local server root (e.g., htdocs or www):
+- Password storage with `password_hash()` and `password_verify()`
+- Prepared statements for database queries
+- Input validation and output encoding
+- Session and authorization controls
+- Configuration and database-credential handling
 
-2. Database Configuration
-Create a new database named ems_database.
+## Project Structure
 
-Import the database.sql file provided in this repository.
-
-3. Connection Settings
-Open project.php and verify the connection string:
-
-## 🛡️ Future Enhancements
-Security: Implement password_hash() for user credentials.
-
-SQL Injection: Transition to Prepared Statements.
-
-UI/UX: Integration of Bootstrap 5 for a responsive dashboard.
-
-## 👤 Author
-Hassan Ali (23-cys-035)
-
-Cybersecurity Student
-
-HITEC University Taxila
+```text
+project.php     # Main PHP application
+database.sql    # Database schema and seed data, if present
+README.md       # Project documentation
+Report.pdf      # Project report, if present
+LICENSE         # License information
+```
