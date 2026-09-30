@@ -21,7 +21,6 @@ A PHP and MySQL web application for managing organizational departments, designa
 
 | Table | Purpose |
 | --- | --- |
-| --- | --- |
 | `Users` | Administrator accounts and authentication data |
 | `Departments` | Organizational departments |
 | `Designations` | Job titles associated with departments |
