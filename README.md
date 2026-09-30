@@ -21,6 +21,7 @@ A PHP and MySQL web application for managing organizational departments, designa
 
 | Table | Purpose |
 | --- | --- |
+| --- | --- |
 | `Users` | Administrator accounts and authentication data |
 | `Departments` | Organizational departments |
 | `Designations` | Job titles associated with departments |
@@ -31,9 +32,8 @@ A PHP and MySQL web application for managing organizational departments, designa
 1. Install PHP, MySQL, and Apache through XAMPP, WAMP, or an equivalent local stack.
 2. Clone or copy the repository into the server document root, such as `htdocs`.
 3. Import `database.sql`; it creates the `ems_db` database and tables.
-4. Import the repository's `database.sql` file.
-5. The demo login is `admin` / `password`; change it before real use.
-6. Start Apache and MySQL, then open the project through the local server.
+4. The demo login is `admin` / `password`; change it before real use.
+5. Start Apache and MySQL, then open the project through the local server.
 
 ## Security Considerations
 
